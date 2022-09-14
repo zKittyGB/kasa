@@ -1,0 +1,7 @@
+body {
+  background: #E5E5E5;
+  margin: 0;
+  width:1440px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

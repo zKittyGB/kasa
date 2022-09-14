@@ -1,0 +1,32 @@
+.kasa-menu {
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    margin-top: 57px;
+    font:24px;
+    color:#FF6060;
+}
+.kasa-menu-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right:100px;
+}
+
+.kasa-menu-ul li{
+    height:34px;
+}
+
+.home {
+    display: flex;
+    justify-content: flex-end;
+    width:136px;
+    margin-left:0px;
+    margin-right:0px;    
+}
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    width:116px;
+}
