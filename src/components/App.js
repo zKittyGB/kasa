@@ -2,6 +2,7 @@ import '../styles/App.css';
 import Logo from './Logo.js'
 import Menu from './Menu.js'
 import Banner from './Banner.js'
+import Card from './Card.js'
 
 function App() {
   return (
@@ -10,8 +11,16 @@ function App() {
         <Logo/>
         <Menu/>
       </div>
-      <div>
+      <div className='Boddy'>
         <Banner/>
+        <div className='Gallerie'>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>       
+        </div>
       </div>
     </div>
   );

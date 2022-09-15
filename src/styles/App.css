@@ -7,3 +7,14 @@ body{
     flex-direction: row;
     width:100%;
 }
+
+.Gallerie {
+    position:absolute;
+    margin-left:100px;
+    margin-top:390px;
+    width:1240px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

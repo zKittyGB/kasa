@@ -1,0 +1,30 @@
+.kasa-gallery-card {
+    background-color: #ff6060;
+    width:340px;
+    height: 340px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-bottom: 50px;
+}
+
+.kasa-gallery-card-filter {
+    position: absolute;
+    width:340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.kasa-gallery-card h2 {
+    z-index: 2;
+    color:white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    margin-left:20px;
+}
