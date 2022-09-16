@@ -1,7 +1,8 @@
 .kasa-banner {
     max-width: 1240px;
+    position: absolute;
+    top: 100px;
 }
-
 
 .kasa-img-filter {
     z-index: 2;

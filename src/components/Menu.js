@@ -1,12 +1,11 @@
 import  '../styles/Menu.css'
 
-function Menu({homeIsOpen, setIsClose}) {
-
+function Menu({homeIsClose, aboutIsClose}) {
     return(
         <div className='kasa-menu'>
             <ul className='kasa-menu-ul'>
-                <li className='home' onClick={()=>setIsClose(true)}>Accueil</li>
-                <li className='about' onClick={()=>setIsClose(false)}>A Propos</li>
+                <li className='home' onClick={()=>{homeIsClose(true); aboutIsClose(false)}}>Accueil</li>
+                <li className='about' onClick={()=>{homeIsClose(false); aboutIsClose(true)}}>A Propos</li>
             </ul>
         </div>
     )

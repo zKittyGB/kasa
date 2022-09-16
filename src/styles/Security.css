@@ -1,0 +1,50 @@
+.kasa-security {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-style: normal;
+    margin-top:40px;
+    margin-bottom: 80px;
+
+}
+
+.kasa-security-headband {
+    z-index: 2;
+    background-color:#FF6060;
+    max-width:1023px;
+    width:1023px;
+    height: 47px;
+    border-radius: 5px;
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.kasa-security-headband h3 {
+    margin-left:18px;
+    font-weight:500;
+}
+
+.kasa-security-headband em{
+    margin-right:20px;
+}
+
+.kasa-security-p {
+    margin-top: -20px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:1023px;
+    height: 240px;
+    color:#FF6060;
+    font-weight:400;
+}
+
+.kasa-security-p p{
+    margin-top:15px;
+    margin-left:18px;
+}

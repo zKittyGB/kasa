@@ -1,0 +1,9 @@
+.footer-Area {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+.kasa-logo-footer {
+    margin-bottom: 30px;
+}

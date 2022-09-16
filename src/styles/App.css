@@ -2,19 +2,46 @@ body{
     font-family: 'Montserrat';
 }
 
+*{
+    margin:0;
+    padding: 0;
+}
+
+.Main {
+    position: relative;
+    min-height: 100%;
+    margin:0 auto;
+}
+
+.Boddy {
+    width:100%;
+}
 .Header {
     display:flex;
     flex-direction: row;
     width:100%;
 }
 
-.Gallerie {
-    position:absolute;
+.Gallerie, .section-about {
     margin-left:100px;
-    margin-top:390px;
+    margin-top:350px;
+    margin-bottom: 20px;
     width:1240px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.section-lodging{
+    margin-left: 100px;
+}
+
+.footer {
+    display:flex;
+    background-color: black;
+    min-width:100%;
+    min-height: 209px;
+    justify-content: center;
+    align-items: center;
 }
