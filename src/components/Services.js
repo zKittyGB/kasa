@@ -8,7 +8,7 @@ function Services() {
             <div className='kasa-services'>
                 <div className='kasa-services-headband'>
                     <h3>Services</h3>
-                    <em className='fa-solid fa-chevron-up' onClick={()=>ServicesIsClose(ServicesIsOpen + 1)}></em>
+                    <em className='fa-solid fa-chevron-down' onClick={()=>ServicesIsClose(ServicesIsOpen + 1)}></em>
                 </div>
             </div>
         )
@@ -18,7 +18,7 @@ function Services() {
             <div className='kasa-services'>
                 <div className='kasa-services-headband'>
                     <h3>Services</h3>
-                    <em className='fa-solid fa-chevron-down' onClick={()=>ServicesIsClose(ServicesIsOpen - 1)}></em>
+                    <em className='fa-solid fa-chevron-up' onClick={()=>ServicesIsClose(ServicesIsOpen - 1)}></em>
                 </div>
                 <div className='kasa-services-p'>
                     <p>

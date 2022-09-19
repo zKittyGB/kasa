@@ -1,0 +1,51 @@
+.kasa-lodgingEquipments {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.kasa-lodgingEquipments-headband {
+    z-index: 2;
+    background-color:#FF6060;
+    max-width:1023px;
+    height: 47px;
+    border-radius: 5px;
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.kasa-lodgingEquipments-headband h3 {
+    margin-left:18px;
+    font-weight:500;
+}
+
+.kasa-lodgingEquipments-headband em{
+    margin-right:20px;
+}
+
+.kasa-lodgingEquipments {
+    width:45%;
+}
+
+.kasa-lodgingEquipments-li {
+    background-color: #F6F6F6;
+    margin-top:-10px;
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+}
+
+.kasa-lodgingEquipments-li li {
+    margin-left:18px;
+    margin-top:3px;
+}
+
+.kasa-lodgingEquipments-li :first-child {
+    margin-top: 20px;
+}
+
+.kasa-lodgingEquipments-li :last-child {
+    margin-bottom: 10px;
+}

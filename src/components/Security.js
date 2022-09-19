@@ -8,7 +8,7 @@ function Security() {
             <div className='kasa-security'>
                 <div className='kasa-security-headband'>
                     <h3>Security</h3>
-                    <em className='fa-solid fa-chevron-up' onClick={()=>SecurityIsClose(SecurityIsOpen + 1)}></em>
+                    <em className='fa-solid fa-chevron-down' onClick={()=>SecurityIsClose(SecurityIsOpen + 1)}></em>
                 </div>
             </div>
         )
@@ -18,7 +18,7 @@ function Security() {
             <div className='kasa-security'>
                 <div className='kasa-security-headband'>
                     <h3>Security</h3>
-                    <em className='fa-solid fa-chevron-down' onClick={()=>SecurityIsClose(SecurityIsOpen - 1)}></em>
+                    <em className='fa-solid fa-chevron-up' onClick={()=>SecurityIsClose(SecurityIsOpen - 1)}></em>
                 </div>
                 <div className='kasa-security-p'>
                     <p>

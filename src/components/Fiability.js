@@ -8,7 +8,7 @@ function Fiability() {
             <div className='kasa-fiability'>
                 <div className='kasa-fiability-headband'>
                     <h3>Fiabilité</h3>
-                    <em className='fa-solid fa-chevron-up' onClick={()=>fiabilityIsClose(fiabilityIsOpen + 1)}></em>
+                    <em className='fa-solid fa-chevron-down' onClick={()=>fiabilityIsClose(fiabilityIsOpen + 1)}></em>
                 </div>
             </div>
         )
@@ -18,7 +18,7 @@ function Fiability() {
             <div className='kasa-fiability'>
                 <div className='kasa-fiability-headband'>
                     <h3>Fiabilité</h3>
-                    <em className='fa-solid fa-chevron-down' onClick={()=>fiabilityIsClose(fiabilityIsOpen - 1)}></em>
+                    <em className='fa-solid fa-chevron-up' onClick={()=>fiabilityIsClose(fiabilityIsOpen - 1)}></em>
                 </div>
                 <div className='kasa-fiability-p'>
                     <p>

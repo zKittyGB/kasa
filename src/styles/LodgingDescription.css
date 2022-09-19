@@ -1,0 +1,49 @@
+.kasa-lodgingDescription {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.kasa-lodgingDescription-headband {
+    z-index: 2;
+    background-color:#FF6060;
+    max-width:1023px;
+    height: 47px;
+    border-radius: 5px;
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.kasa-lodgingDescription-headband h3 {
+    margin-left:18px;
+    font-weight:500;
+}
+
+.kasa-lodgingDescription-headband em{
+    margin-right:20px;
+}
+
+.kasa-lodgingDescription {
+    width:45%;
+}
+
+.kasa-lodgingDescription-p {
+    margin-top: -10px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#FF6060;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.kasa-lodgingDescription-p p{
+    margin-left:18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

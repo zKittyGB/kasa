@@ -8,7 +8,7 @@ function Respect() {
             <div className='kasa-respect'>
                 <div className='kasa-respect-headband'>
                     <h3>Respect</h3>
-                    <em className='fa-solid fa-chevron-up' onClick={()=>RespectIsClose(RespectIsOpen + 1)}></em>
+                    <em className='fa-solid fa-chevron-down' onClick={()=>RespectIsClose(RespectIsOpen + 1)}></em>
                 </div>
             </div>
         )
@@ -18,7 +18,7 @@ function Respect() {
             <div className='kasa-respect'>
                 <div className='kasa-respect-headband'>
                     <h3>Respect</h3>
-                    <em className='fa-solid fa-chevron-down' onClick={()=>RespectIsClose(RespectIsOpen - 1)}></em>
+                    <em className='fa-solid fa-chevron-up' onClick={()=>RespectIsClose(RespectIsOpen - 1)}></em>
                 </div>
                 <div className='kasa-respect-p'>
                     <p>

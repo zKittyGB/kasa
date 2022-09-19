@@ -1,11 +1,6 @@
-.kasa-lodging-cover {
+.kasa-lodging {
     width:1240px;
     max-width: 1240px;
-    height:415px;
-    border-radius: 25px;
-}
-
-.kasa-lodging {
     font-weight: 500;
     color:#ff6060;
 }
@@ -20,4 +15,92 @@
 .kasa-lodging  h3 {
     font-weight: 500;
     font-size: 18px;
+}
+
+.kasa-lodging-cover {
+    width:1240px;
+    max-width: 1240px;
+    margin-top: 20px;
+    height:415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.kasa-header-lodging {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kasa-header-lodging-title {
+    margin-top:20px;
+}
+.kasa-header-lodging-title-tags {
+    display:flex;
+    flex-direction: row;
+    margin-top: 23px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: white;
+}
+
+.kasa-header-lodging-title-tags-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:115px;
+    height: 25px;
+    background-color: #ff6060;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.kasa-header-lodging-title-tags-tag p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.kasa-header-lodging-host {
+    margin-top:24px;
+}
+.kasa-header-lodging-host-profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    text-align: right;
+}
+
+.kasa-header-lodging-host-profil-name {
+    width: 93px;
+    margin:0;
+}
+
+.kasa-header-lodging-host-profil-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 35px;
+}
+
+.kasa-header-lodging-host-rating {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.kasa-header-lodging-host-rating img {
+    width:30px;
+    height: 30px;
+}
+
+.kasa-lodging-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:26px;
+    width:1240px;
+    max-width: 1240px;
+    margin-bottom: 40px;
 }

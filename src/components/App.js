@@ -9,44 +9,53 @@ import Respect from './Respect'
 import Services from './Services'
 import Security from './Security'
 import Lodging from './Lodging'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ImgHome from '../assets/img-banner-home.png'
 import ImgAbout from '../assets/img-banner-about.png'
 
-function App() {
+
+function App() {  
   const [homeIsOpen, homeIsClose] = useState(true)
   const [aboutIsOpen, aboutIsClose] = useState([])
   const [lodgingIsOpen, lodgingIsClose] = useState([])
   const [h1Banner] = useState([])
-  //affichage du home si useState home = true
+  const [lodgingListe, lodginFetch] = useState([]);
+  const[targetId, handleClick]=useState([])
+
+    //Function to collect data
+    const GetApiData = async () => {
+        const response = await fetch('http://localhost:3000//locations.json').then((response) => response.json());
+        // update the state
+        lodginFetch(response);
+    };
+    useEffect(() => {GetApiData();}, []);
+  //affichage de la page d'accueil
   if(homeIsOpen===true){
     return(
-      //page home
       <div className='Main'>
         <div className='Header'>
           <Logo/>
-          <Menu homeIsClose={homeIsClose} aboutIsClose={aboutIsClose} />
+          <Menu homeIsOpen={homeIsOpen} homeIsClose={homeIsClose} aboutIsOpen={aboutIsOpen} aboutIsClose={aboutIsClose} />
         </div>
         <div className='Boddy'>
           <Banner Img={ImgHome}/>
           <div className='Gallerie'>
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />
-            <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose} />     
+            {lodgingListe.map((lodge)=>(
+              <div className='card'>
+                <Card lodgingIsClose={lodgingIsClose} homeIsClose={homeIsClose}  lodge={lodge} handleClick={handleClick}/>  
+              </div>
+            ))}
           </div>
         </div>
         <div className='footer'>
           <Footer/>
         </div>
       </div>
-    )
+    )    
   }
+  //affichage de la page about  
   if(aboutIsOpen === true){
     return( 
-      //page about
       <div className='Main'>
         <div className='Header'>
           <Logo/>
@@ -67,6 +76,7 @@ function App() {
       </div>
     )
   }
+  //Affichage de la page logements
   if(lodgingIsOpen === true){
     return(
       <div className='Main'>
@@ -76,7 +86,7 @@ function App() {
       </div>
       <div className='Boddy'>
         <div className='section-lodging'>
-          <Lodging/>
+          <Lodging lodge={lodgingListe} id={targetId}/>
         </div>
       </div>
       <div className='footer'>
@@ -84,7 +94,10 @@ function App() {
       </div>
     </div>
     )
-  }
+  }  
 }
+
+
+
 
 export default App;
