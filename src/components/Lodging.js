@@ -1,26 +1,46 @@
 import  '../styles/Lodging.css'
 import greyStar from '../assets/star_grey.png'
 import pinkStar from '../assets/star_pink.png'
+import arrowLeft from '../assets/arrow_left.png'
+import arrowRight from '../assets/arrow_right.png'
 import LodgingDescription from './LodgingDescription'
 import LodgingEquipments from './LodgingEquipments'
+import {useState } from 'react';
 
 function Lodging({lodge,id}) {
+     //récupération de l'id du logement ouvert
     const filteredLodge = lodge.filter(lodge =>{ return lodge.id === id})
+    const [showPicture, setShowPicture] = useState(0);
+    const arrayPictureLength =(filteredLodge[0].pictures.length)
     //creation du tableau rating
     const ratingList =[]
     //calcul du nombre d'étoile rouge à mettre
     for(let i=0; i<filteredLodge[0].rating;i++){
-        ratingList.push(<li><img src={pinkStar} alt='rating'/></li>)        
+        ratingList.push(<li key={'star'+i}><img src={pinkStar} alt='rating'/></li>)        
     }
     //calcul du nombre d'étoile grise à mettre
     for(let j=filteredLodge[0].rating; j<5;j++){
-        ratingList.push(<li><img src={greyStar} alt='rating'/></li>)
+        ratingList.push(<li key={'star'+j}><img src={greyStar} alt='rating'/></li>)
     }
-
+    //renvoie le carrousel à la dernière image
+    if(showPicture === -1){
+        setShowPicture(arrayPictureLength-1)
+    }
+    //renvoie le carrousel à la premiere image
+    if(showPicture === arrayPictureLength){
+        setShowPicture(0)
+    }
+    
     return(
         <div className='kasa-lodging'>
             {/*affichage de la photo de couverture*/}
-            <img className='kasa-lodging-cover' src={filteredLodge[0].cover} alt="cover"/>
+            <div className='kasa-lodging-carousel'>
+                <div className='kasa-lodging-carousel-arrows'>
+                    <img className='kasa-lodging-carousel-arrows-left' src={arrowLeft} onClick={()=>{setShowPicture(showPicture - 1)}} alt='arrow left'/>
+                    <img className='kasa-lodging-carousel-arrows-right' src={arrowRight}  onClick={()=>{setShowPicture(showPicture + 1)}} alt='arrow right'/>
+                </div>
+                <img className='kasa-lodging-carousel-cover' src={filteredLodge[0].pictures[showPicture]} alt="cover"/>                
+            </div>
             <div className='kasa-header-lodging'>
                 {/*affichage de la zone titre de l'annonce*/}
                 <div className='kasa-header-lodging-title'>
@@ -29,7 +49,7 @@ function Lodging({lodge,id}) {
                     {/*récuperation des taggs de l'annonce*/}
                     <div className='kasa-header-lodging-title-tags'>
                         {filteredLodge[0].tags.map(filteredLodgetag => (
-                            <div className='kasa-header-lodging-title-tags-tag'>
+                            <div key={filteredLodgetag} className='kasa-header-lodging-title-tags-tag'>
                                 <p>{filteredLodgetag}</p>
                             </div>      
                         ))}

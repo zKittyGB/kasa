@@ -17,7 +17,32 @@
     font-size: 18px;
 }
 
-.kasa-lodging-cover {
+.kasa-lodging-carousel {
+    width:1240px;
+    max-width: 1240px;
+}
+
+.kasa-lodging-carousel-arrows{
+    margin-top: 20px;
+    position: absolute;
+    width:1240px;
+    max-width: 1240px;
+    height:415px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kasa-lodging-carousel-arrows-left {
+    margin-left:23px;
+}
+
+.kasa-lodging-carousel-arrows-right {
+    margin-right:23px;
+}
+
+.kasa-lodging-carousel-cover {
     width:1240px;
     max-width: 1240px;
     margin-top: 20px;

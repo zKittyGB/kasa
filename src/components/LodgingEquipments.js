@@ -22,7 +22,7 @@ function LodgingEquipments(equipments) {
                 </div>
                 <div className='kasa-lodgingEquipments-li'>
                     {equipments.equipements.map(equipments => (
-                        <li>{equipments}</li>
+                        <li key={equipments}>{equipments}</li>
                     ))}
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import  '../styles/Menu.css'
 
-function Menu({homeIsOpen, homeIsClose, aboutIsOpen, aboutIsClose}) {
+function Menu({homeIsOpen, homeIsClose, aboutIsClose}) {
     if(homeIsOpen === true){
         return(
             <div className='kasa-menu'>

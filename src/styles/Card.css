@@ -9,6 +9,15 @@
     margin-bottom: 50px;
 }
 
+.kasa-gallery-card-picture {
+    position: absolute;
+    width:340px;
+    height:340px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
 .kasa-gallery-card-filter {
     position: absolute;
     width:340px;
