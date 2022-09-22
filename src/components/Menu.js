@@ -1,13 +1,17 @@
 import  '../styles/Menu.css'
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Menu({homeIsOpen, homeIsClose, aboutIsClose}) {
     if(homeIsOpen === true){
         return(
             <div className='kasa-menu'>
-                <ul className='kasa-menu-ul'>
-                    <li className='home underline' onClick={()=>{homeIsClose(true); aboutIsClose(false)}}>Accueil</li>
-                    <li className='about' onClick={()=>{homeIsClose(false); aboutIsClose(true)}}>A Propos</li>
-                </ul>
+                <nav>
+                    <ul className='kasa-menu-ul'>
+                        <li className='home underline'><Link to='/'>Accueil</Link></li>
+                        <li className='about'><Link to='/About'>A Propos</Link></li>
+                    </ul>
+                </nav>
             </div>
         )
     }
@@ -15,8 +19,8 @@ function Menu({homeIsOpen, homeIsClose, aboutIsClose}) {
         return(
             <div className='kasa-menu'>
                 <ul className='kasa-menu-ul'>
-                    <li className='home' onClick={()=>{homeIsClose(true); aboutIsClose(false)}}>Accueil</li>
-                    <li className='about underline' onClick={()=>{homeIsClose(false); aboutIsClose(true)}}>A Propos</li>
+                    <li className='home'><Link to='/'>Accueil </Link></li>
+                    <li className='about underline'><Link to='/About'>A Propos</Link></li>
                 </ul>
             </div>
         )
