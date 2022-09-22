@@ -9,7 +9,6 @@ import Fetch from '../Fetch'
 import { useEffect, useState } from 'react';
 
 function HomePage() { 
-
   const [homeIsOpen] = useState(true);
   const [lodgingListe, lodgingFetch] = useState([]);
   //récupération des datas logements

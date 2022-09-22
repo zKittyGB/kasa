@@ -49,7 +49,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 840px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 840px) /* Ecran = Résolution < à 840 */
 {
     .kasa-menu-ul {
         display: flex;
@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and (max-width: 575px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 575px) /* Ecran = Résolution < à 575 */
 {
     .kasa-menu {
         font-size: 15px;
@@ -86,7 +86,7 @@
     }
 }
 
-@media screen and (max-width: 375px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 375px) /* Ecran = Résolution < à 375px */
 {
     .kasa-menu-ul {
         margin-right: 25px;

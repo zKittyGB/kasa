@@ -133,7 +133,7 @@
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 500px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 500px) /* Ecran = Résolution < à 500 */
 {
     .kasa-header-lodging {
         display: flex;

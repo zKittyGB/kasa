@@ -45,7 +45,7 @@
     font:48px;
 } 
 
-@media screen and (max-width: 575px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 575px) /* Ecran = Résolution < à 575 */
 {
     .kasa-sectionBanner {
         height: 111px;
@@ -72,7 +72,7 @@
     }
 }
 
-@media screen and (max-width: 375px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 375px) /* Ecran = Résolution < à 375px */
 {
     .kasa-sectionBanner-banner-h1 {
         position: left;

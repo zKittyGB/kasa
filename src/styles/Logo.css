@@ -5,7 +5,7 @@
     height: 68px;
 }
 
-@media screen and (max-width: 840px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 840px) /* Ecran = Résolution < à 840 */
 {
     .kasa-logo {
         margin-left: 50px;
@@ -13,7 +13,7 @@
 }
 
 
-@media screen and (max-width: 575px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 575px) /* Ecran = Résolution < à 575 */
 {
     .kasa-logo {
         margin-left: 40px;
@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 375px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 375px) /* Ecran = Résolution < à 375 */
 {
     .kasa-logo {
         margin-left: 25px;

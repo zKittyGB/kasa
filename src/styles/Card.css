@@ -37,3 +37,23 @@
     margin-left:20px;
     margin-bottom: 20px;
 }
+
+
+@media screen and (max-width: 575px) /* Ecran = Résolution < à 575px */
+{
+    .card {
+        height: 255px;
+        margin-bottom: 20px;
+    }
+    .kasa-gallery-card{
+        max-height: 255px;
+    }
+
+    .kasa-gallery-card-picture {
+        max-height: 255px;
+    }
+
+    .kasa-gallery-card-filter {
+        max-height: 255px;
+    }
+}

@@ -20,7 +20,6 @@ function Banner({Img, h1Banner}) {
           window.removeEventListener('resize', debouncedHandleResize)
         }
       })
-      console.log(Img)
       //adapte l'image de la banner selon la taille d'ecran
       if(dimensions.width <= "575" && Img === "/static/media/img-banner-about.fce6fc3e9ed27433e9b0.png"){
         Img=miniBanner

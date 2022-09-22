@@ -48,7 +48,7 @@
     margin-left:18px;
 }
 
-@media screen and (max-width: 840px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 840px) /* Ecran = Résolution < à 840 */
 {
     .kasa-services-headband h3 {
         font-size: 20px;
@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 446px) /* Ecran = Résolution < à 315px */
+@media screen and (max-width: 446px) /* Ecran = Résolution < à 446 */
 {
     .kasa-services-headband h3 {
         font-size: 13px;
