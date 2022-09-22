@@ -1,3 +1,4 @@
+import  '../../styles/Home.css'
 import Logo from '../Logo'
 import Menu from '../Menu'
 import Footer from '../Footer'
@@ -9,6 +10,7 @@ import { useEffect, useState } from 'react';
 
 function HomePage() { 
 
+  const [homeIsOpen] = useState(true);
   const [lodgingListe, lodgingFetch] = useState([]);
   //récupération des datas logements
   async function GetApiData(){
@@ -21,7 +23,7 @@ function HomePage() {
     <div className='Main'>
       <div className='Header'>
         <Logo/>
-        <Menu />
+        <Menu homeIsOpen={homeIsOpen} />
       </div>
       <div className='Boddy'>
         <Banner Img={ImgHome}/>

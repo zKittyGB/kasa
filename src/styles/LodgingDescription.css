@@ -47,3 +47,21 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 500px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-lodgingDescription {
+        width:100%;
+        margin-bottom: 30px;
+    }
+
+    .kasa-lodgingDescription-headband h3 {
+        font-size: 13px;
+    }
+
+    .kasa-lodgingDescription-p p {
+        margin-right:10px;
+        font-size: 12px;
+    }
+
+}

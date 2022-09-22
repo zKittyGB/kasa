@@ -1,10 +1,13 @@
 import logo from '../assets/logo.png'
 import  '../styles/Logo.css'
+import {Link} from 'react-router-dom'
 
-function Logo({homeIsClose, aboutIsClose}) {
+function Logo() {
     return(
         <div>
-            <img src={logo} onClick={()=>{homeIsClose(true); aboutIsClose(false)}} alt ="Kasa" className='kasa-logo'/>
+            <nav>
+                <Link to='/'><img src={logo} alt ="Kasa" className='kasa-logo'/></Link>
+            </nav>
         </div>
     )
 }

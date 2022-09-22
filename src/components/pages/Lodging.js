@@ -3,8 +3,6 @@ import Menu from '../Menu'
 import Footer from '../Footer'
 import Lodging from '../Lodging'
 
-
-
 function LodgingPage() {  
     return(
         <div className='Main'>

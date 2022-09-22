@@ -12,10 +12,9 @@
 .kasa-gallery-card-picture {
     position: absolute;
     width:340px;
-    height:340px;
+    height: 340px;
     object-fit: cover;
     border-radius: 10px;
-
 }
 
 .kasa-gallery-card-filter {

@@ -1,6 +1,9 @@
+.section-lodging {
+    max-width: 90%;
+}
 .kasa-lodging {
     width:1240px;
-    max-width: 1240px;
+    max-width: 100%;
     font-weight: 500;
     color:#ff6060;
 }
@@ -19,14 +22,14 @@
 
 .kasa-lodging-carousel {
     width:1240px;
-    max-width: 1240px;
+    max-width:100%;
 }
 
 .kasa-lodging-carousel-arrows{
     margin-top: 20px;
     position: absolute;
     width:1240px;
-    max-width: 1240px;
+    max-width: 90%;
     height:415px;
     display: flex;
     flex-direction: row;
@@ -44,7 +47,7 @@
 
 .kasa-lodging-carousel-cover {
     width:1240px;
-    max-width: 1240px;
+    max-width: 100%;
     margin-top: 20px;
     height:415px;
     border-radius: 25px;
@@ -126,6 +129,82 @@
     justify-content: space-between;
     margin-top:26px;
     width:1240px;
-    max-width: 1240px;
+    max-width: 100%;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 500px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-header-lodging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kasa-lodging-carousel {
+        height:300px;
+    }
+
+    .kasa-lodging-carousel-arrows {
+        height: 300px;
+        margin-top: 40px;
+    }
+    
+    .kasa-lodging-carousel-arrows-left {
+        margin-left:0px;
+        width:40px;
+    }
+    
+    .kasa-lodging-carousel-arrows-right {
+        margin-right:0px;
+        width:40px;
+
+    }
+
+    .kasa-lodging-carousel-cover {
+        height:300px;
+    }
+
+
+    .kasa-header-lodging-title {
+        margin-bottom:0px;
+    }
+    
+    .kasa-header-lodging-title-tags {
+        margin-bottom: 15px;
+    }
+    
+    .kasa-header-lodging-title-tags-tag p {
+        font-size: 12px;
+    }
+    
+
+    .kasa-header-lodging-host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top:0;
+    }
+
+    .kasa-header-lodging-host-profil {
+        width:135px;
+    }
+
+    .kasa-header-lodging-host-profil-name {
+        width:60px;
+    }
+
+    .kasa-lodging  h3 {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    
+    .kasa-header-lodging-host-rating img {
+        width:20px;
+        height: 20px;
+    }
+    
+
+    .kasa-lodging-infos {
+        flex-direction: column;
+    }    
 }

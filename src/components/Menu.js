@@ -2,7 +2,7 @@ import  '../styles/Menu.css'
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function Menu({homeIsOpen, homeIsClose, aboutIsClose}) {
+function Menu({homeIsOpen}) {
     if(homeIsOpen === true){
         return(
             <div className='kasa-menu'>

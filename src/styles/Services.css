@@ -10,7 +10,7 @@
 .kasa-services-headband {
     z-index: 2;
     background-color:#FF6060;
-    max-width:1023px;
+    max-width:90%;
     width:1023px;
     height: 47px;
     border-radius: 5px;
@@ -36,8 +36,9 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    max-width:90%;
     width:1023px;
-    height: 146px;
+    min-height: 146px;
     color:#FF6060;
     font-weight:400;
 }
@@ -45,4 +46,37 @@
 .kasa-services-p p{
     margin-top:15px;
     margin-left:18px;
+}
+
+@media screen and (max-width: 840px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-services-headband h3 {
+        font-size: 20px;
+    }
+
+    .kasa-services-p p{
+        font-size: 16px;
+        margin-right:10px;
+
+    }
+
+    .kasa-services-p {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 446px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-services-headband h3 {
+        font-size: 13px;
+    }
+
+    .kasa-services-p p{
+        font-size: 12px;
+        margin-right:10px;
+    }
+
+    .kasa-services-p {
+        min-height: 120px;
+    }
 }

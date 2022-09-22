@@ -49,3 +49,21 @@
 .kasa-lodgingEquipments-li :last-child {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 500px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-lodgingEquipments {
+        width:100%;
+    }
+
+    .kasa-lodgingEquipments-headband h3 {
+        font-size: 13px;
+    }
+
+    .kasa-lodgingEquipments-li li {
+        
+        margin-right:10px;
+        font-size: 12px;
+    }
+
+}

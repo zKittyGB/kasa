@@ -17,6 +17,17 @@
 
 .kasa-menu-ul li{
     height:34px;
+    color:#FF6060;
+}
+
+.kasa-menu-ul li a{
+    height:34px;
+    color:#FF6060;
+}
+
+.kasa-menu-ul li a:visited{
+    height:34px;
+    color:#FF6060;
 }
 
 .home {
@@ -36,4 +47,48 @@
 
 .underline {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 840px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-menu-ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-right:50px;
+    }
+
+    .about {
+        margin-left:10px;
+    }
+}
+
+@media screen and (max-width: 575px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-menu {
+        font-size: 15px;
+    }
+    .kasa-menu-ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-right:40px;
+    }
+
+    .about {
+        margin-left:0px;
+        width:70px;
+        margin-left: 10px;
+    }
+
+    .home {
+        width:60px;
+    }
+}
+
+@media screen and (max-width: 375px) /* Ecran = Résolution < à 315px */
+{
+    .kasa-menu-ul {
+        margin-right: 25px;
+    }
 }
