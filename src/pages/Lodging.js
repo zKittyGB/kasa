@@ -1,7 +1,7 @@
-import Logo from '../Logo'
-import Menu from '../Menu'
-import Footer from '../Footer'
-import Lodging from '../Lodging'
+import Logo from '../components/Logo'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
+import Lodging from '../components/Lodging'
 
 function LodgingPage() {  
     return(

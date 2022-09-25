@@ -1,7 +1,7 @@
-import  '../../styles/Error.css'
-import Logo from '../Logo'
-import Menu from '../Menu'
-import Footer from '../Footer'
+import  '../styles/Error.css'
+import Logo from '../components/Logo'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 import {Link} from 'react-router-dom'
 
 function Error() {

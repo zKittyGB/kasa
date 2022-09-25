@@ -1,8 +1,8 @@
 import '../styles/App.css';
-import HomePage from "./pages/Home"
-import AboutPage from "./pages/About"
-import LodgingPage from "./pages/Lodging"
-import ErrorPage from "./pages/Error"
+import HomePage from "../pages/Home"
+import AboutPage from "../pages/About"
+import LodgingPage from "../pages/Lodging"
+import ErrorPage from "../pages/Error"
 import {Routes, Route} from "react-router-dom"
 
 function App() {  

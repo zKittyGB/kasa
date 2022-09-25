@@ -1,13 +1,13 @@
-import Logo from '../Logo'
-import Menu from '../Menu'
-import Footer from '../Footer'
-import Banner from '../Banner'
-import Fiability from '../Fiability'
-import Respect from '../Respect'
-import Services from '../Services'
-import Security from '../Security'
+import Logo from '../components/Logo'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
+import Banner from '../components/Banner'
+import Fiability from '../components/Fiability'
+import Respect from '../components/Respect'
+import Services from '../components/Services'
+import Security from '../components/Security'
 import { useState } from 'react';
-import ImgAbout from '../../assets/img-banner-about.png'
+import ImgAbout from '../assets/img-banner-about.png'
 
 function AboutPage() {  
     const [h1Banner] = useState([])
