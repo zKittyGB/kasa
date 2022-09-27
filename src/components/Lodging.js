@@ -19,9 +19,14 @@ function Lodging() {
 
     //récupération des datas logements
     async function GetApiData(){
-      const data = await Fetch()
-      lodgingFetch(data)
-      setFetchDone(true)
+        try{
+            const data = await Fetch()
+            lodgingFetch(data)
+            setFetchDone(true)
+        }
+        catch(err){
+            console.log(err)
+        }    
     }
     useEffect(() => {GetApiData();}, []);
      
